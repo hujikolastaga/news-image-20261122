@@ -102,7 +102,7 @@ const LEADS = [
   {
     id: 3,
     region: 'europe',
-    location: 'KYIV REGION, UKRAINE',
+    location: 'KYIV, UKRAINE',
     beat: 'WAR',
     badge: 'OFFICIALS · UKRAINE AF, AP',
     headline: '186 Russian drones hit Ukraine; Dymer flats struck',
@@ -272,31 +272,11 @@ const MIDS = [
   },
   {
     id: 11,
-    region: 'oceania',
-    location: 'WELLINGTON, NZ',
-    tag: 'CONFIRMED · HINDU',
-    headline: 'India declare on record 720/9 against New Zealand',
-    summary: 'Highest away Test total for India; NZ trail at 119/2.',
-    lat: -41.29,
-    lon: 174.78,
-    svg: `<svg viewBox="0 0 186 66" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <rect width="186" height="66" fill="#CBE7C7"/>
-      <polygon points="14,66 32,25 66,25 84,66" fill="#E5D5B5" stroke="#A89674"/>
-      <line x1="42" y1="14" x2="42" y2="31" stroke="#111" stroke-width="2"/>
-      <line x1="48" y1="14" x2="48" y2="31" stroke="#111" stroke-width="2"/>
-      <line x1="54" y1="14" x2="54" y2="31" stroke="#111" stroke-width="2"/>
-      <circle cx="70" cy="41" r="6" fill="#B91C1C" stroke="#111" stroke-width="1"/>
-      <text x="136" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#0E7490">720/9</text>
-      <text x="136" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#111">RECORD</text>
-    </svg>`
-  },
-  {
-    id: 12,
     region: 'africa',
     location: 'KHARTOUM, SUDAN',
     tag: 'REPORTED · AJ',
-    headline: 'RSF drones kill 4 near Khartoum, hit UN compound',
-    summary: 'Pre-dawn strikes hit homes and UN site near airport.',
+    headline: 'RSF drones kill 4 near Khartoum, hit UN site',
+    summary: 'Pre-dawn strikes hit homes and UN compound near airport.',
     lat: 15.5,
     lon: 32.56,
     svg: `<svg viewBox="0 0 186 66" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -309,48 +289,25 @@ const MIDS = [
       <text x="139" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-size="18.5" font-weight="900" fill="#276749">UN HIT</text>
       <text x="139" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#111">4 KILLED</text>
     </svg>`
-  },
-  {
-    id: 13,
-    region: 'asia',
-    location: 'HONG KONG',
-    tag: 'CONFIRMED · HKSAR',
-    headline: 'Hong Kong fills all 723 Election Committee seats',
-    summary: 'Turnout reaches 98.79% across 31 contested subsectors.',
-    lat: 22.32,
-    lon: 114.17,
-    svg: `<svg viewBox="0 0 186 66" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <rect width="186" height="66" fill="#EFE7DA"/>
-      <rect x="14" y="10" width="38" height="22" fill="#DE2910" stroke="#111" stroke-width="1.2"/>
-      <circle cx="33" cy="21" r="5" fill="#FFF"/>
-      <rect x="20" y="35" width="60" height="25" fill="#FFF" stroke="#111" stroke-width="1.5"/>
-      <rect x="34" y="39" width="32" height="3.5" fill="#111"/>
-      <polygon points="42,25 58,25 55,39 45,39" fill="#DC2626"/>
-      <text x="136" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="900" fill="#B45309">98.8%</text>
-      <text x="136" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#111">723 SEATS</text>
-    </svg>`
   }
 ];
 
 const BRIEFS = [
-  { id: 14, region: 'europe', place: 'Portimão', text: 'Bezzecchi wins MotoGP Portugal; Márquez takes 2026 title', src: 'MotoGP', lat: 37.23, lon: -8.63 },
-  { id: 15, region: 'europe', place: 'Vatican', text: 'Pope Leo XIV hosts World Day of the Poor lunch for 1,300', src: 'AP', lat: 41.9, lon: 12.45 },
-  { id: 16, region: 'mideast', place: 'Tehran', text: 'Iran starts 2-hr power cuts; vows US blockade counter', src: 'Tavanir, AP', lat: 35.69, lon: 51.39 },
-  { id: 17, region: 'mideast', place: 'Gaza City', text: 'Israeli strikes kill 4; IDF warns against wider Iran war', src: 'AJ, FDD', lat: 31.5, lon: 34.47 },
-  { id: 18, region: 'asia', place: 'Naha, Japan', text: 'Okinawa marks Shuri Castle hall rebuild 7 yrs post-fire', src: 'Yomiuri', lat: 26.21, lon: 127.72 },
-  { id: 19, region: 'asia', place: 'Delhi', text: 'Emergency smog curbs ordered as PM2.5 passes 200', src: 'PTI', lat: 28.61, lon: 77.21 },
-  { id: 20, region: 'americas', place: 'Vandenberg', text: 'SpaceX Falcon 9 launches classified NROL-136 mission', src: 'NRO', lat: 34.74, lon: -120.57 },
-  { id: 21, region: 'americas', place: 'San Antonio', text: 'Wembanyama hits 50 pts, 19 reb as Spurs win 114–91', src: 'NBA', lat: 29.42, lon: -98.49 },
-  { id: 22, region: 'africa', place: 'Oyo, Congo', text: 'Kenya’s Ruto & DRC’s Tshisekedi restore diplomatic ties', src: 'Xinhua', lat: -1.16, lon: 15.97 },
-  { id: 23, region: 'oceania', place: 'Canberra', text: 'Marles rejects US CBO report warning on AUKUS subs', src: 'ABC', lat: -35.28, lon: 149.13 },
-  { id: 24, region: 'antarctica', place: 'Antarctica', text: 'Study ties winter atmospheric rivers to global temp spikes', src: 'ARC', lat: -75.0, lon: 95.0 }
+  { id: 12, region: 'oceania', place: 'Wellington', text: 'India hit record 720/9 decl. vs New Zealand (119/2)', src: 'AP', lat: -41.29, lon: 174.78 },
+  { id: 13, region: 'asia', place: 'Hong Kong', text: '98.8% turnout fills all 723 Election Committee seats', src: 'AFP', lat: 22.32, lon: 114.17 },
+  { id: 14, region: 'americas', place: 'Vandenberg', text: 'SpaceX Falcon 9 orbits classified NROL-136 mission', src: 'NRO', lat: 34.74, lon: -120.57 },
+  { id: 15, region: 'mideast', place: 'Gaza City', text: 'Israeli strikes kill 4; IDF warns against Iran war', src: 'AJ', lat: 31.5, lon: 34.47 },
+  { id: 16, region: 'mideast', place: 'Tehran', text: 'Iran starts 2-hr power cuts; vows blockade response', src: 'AP', lat: 35.69, lon: 51.39 },
+  { id: 17, region: 'europe', place: 'Vatican', text: 'Pope Leo XIV hosts World Day of Poor lunch for 1,300', src: 'AP', lat: 41.9, lon: 12.45 },
+  { id: 18, region: 'oceania', place: 'Canberra', text: 'Marles rejects US CBO report warning on AUKUS subs', src: 'ABC', lat: -35.28, lon: 149.13 },
+  { id: 19, region: 'antarctica', place: 'Antarctica', text: 'Study links winter atmospheric rivers to heat spikes', src: 'ARC', lat: -75.0, lon: 95.0 }
 ];
 
 const ALL_STORIES = [...LEADS, ...MIDS, ...BRIEFS];
 
 function verifyData() {
-  if (ALL_STORIES.length !== 24) {
-    throw new Error(`Expected 24 stories, got ${ALL_STORIES.length}`);
+  if (ALL_STORIES.length !== 19) {
+    throw new Error(`Expected 19 stories, got ${ALL_STORIES.length}`);
   }
   const counts = Object.fromEntries(REGIONS.map(r => [r.id, 0]));
   const seenIds = new Set();
@@ -455,20 +412,21 @@ function buildHtml(counts) {
     color: #111111;
   }
   .masthead .subdeck {
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
     font-size: 13px;
+    letter-spacing: 0.02em;
     color: #7A1414;
-    margin-top: 1px;
+    margin-top: 2px;
   }
   .utc-strip {
     display: flex;
     align-items: stretch;
     border-top: 1px solid #C8C0B0;
     border-bottom: 2px solid #181818;
-    margin-top: 2px;
-    height: 22px;
-    font-size: 9.8px;
+    margin-top: 3px;
+    height: 23px;
+    font-size: 10.2px;
   }
   .utc-badge {
     background: #181818;
@@ -499,7 +457,7 @@ function buildHtml(counts) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 11px;
-    padding: 5px 0;
+    padding: 6px 0;
     border-bottom: 1.5px solid #181818;
   }
   .lead-card {
@@ -512,7 +470,7 @@ function buildHtml(counts) {
     border: 1px solid #B5AC9D;
     overflow: hidden;
   }
-  .lead-art { height: 136px; }
+  .lead-art { height: 140px; }
   .meta-row {
     display: flex;
     justify-content: space-between;
@@ -524,24 +482,25 @@ function buildHtml(counts) {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 9.2px;
+    font-size: 8.8px;
     font-weight: 800;
     color: #111;
+    white-space: nowrap;
   }
   .num-dot {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     color: #FFF;
-    font-size: 9px;
+    font-size: 9.2px;
     font-weight: 800;
     flex-shrink: 0;
   }
   .pill {
-    font-size: 7.8px;
+    font-size: 8.2px;
     font-weight: 800;
     border: 1px solid #555;
     padding: 1px 4px;
@@ -551,52 +510,52 @@ function buildHtml(counts) {
   }
   .lead-card h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 20.5px;
-    line-height: 1.08;
+    font-size: 21.5px;
+    line-height: 1.07;
     font-weight: 700;
     margin-top: 3px;
   }
   .lead-card p {
-    font-size: 11.2px;
+    font-size: 11.8px;
     line-height: 1.24;
     color: #222;
-    margin-top: 3px;
+    margin-top: 4px;
   }
   .mid-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 9px;
-    row-gap: 6px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 11px;
+    row-gap: 7px;
     padding: 6px 0;
     border-bottom: 1.5px solid #181818;
   }
   .mid-card {
     border-right: 1px solid #D4CCC0;
-    padding-right: 8px;
+    padding-right: 10px;
   }
-  .mid-card:nth-child(5n) { border-right: none; padding-right: 0; }
-  .mid-art { height: 62px; }
+  .mid-card:nth-child(4n) { border-right: none; padding-right: 0; }
+  .mid-art { height: 68px; }
   .mid-card h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 13.8px;
-    line-height: 1.1;
+    font-size: 15.6px;
+    line-height: 1.09;
     font-weight: 700;
     margin-top: 3px;
   }
   .mid-card p {
-    font-size: 9.9px;
-    line-height: 1.2;
+    font-size: 11px;
+    line-height: 1.21;
     color: #262626;
     margin-top: 2px;
   }
   .lower-tier {
     display: grid;
     grid-template-columns: 248px 1fr;
-    gap: 12px;
-    padding: 7px 0 5px 0;
+    gap: 13px;
+    padding: 7px 0 4px 0;
   }
   .sec-title {
-    font-size: 9.5px;
+    font-size: 9.8px;
     font-weight: 800;
     letter-spacing: 0.05em;
     color: #A81D1D;
@@ -607,45 +566,45 @@ function buildHtml(counts) {
   .briefs-cols {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 12px;
-    row-gap: 6px;
+    column-gap: 14px;
+    row-gap: 10px;
   }
   .brief {
-    font-size: 11.1px;
-    line-height: 1.28;
+    font-size: 13px;
+    line-height: 1.32;
     color: #111;
   }
   .brief .bnum {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 15px;
-    height: 15px;
+    min-width: 16px;
+    height: 16px;
     padding: 0 3px;
-    border-radius: 7.5px;
+    border-radius: 8px;
     color: #FFF;
-    font-size: 8.5px;
+    font-size: 9px;
     font-weight: 800;
-    margin-right: 3px;
+    margin-right: 4px;
     vertical-align: 0.5px;
   }
-  .brief i { color: #555; }
+  .brief .bsrc { color: #555; font-size: 11px; font-weight: 700; }
   .date-check {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
     border: 1.4px solid #A81D1D;
     background: #EFE6D7;
-    padding: 5px 8px;
-    font-size: 9.7px;
-    line-height: 1.26;
+    padding: 6px 9px;
+    font-size: 10.6px;
+    line-height: 1.28;
     margin-top: auto;
   }
   .dc-badge {
     background: #A81D1D;
     color: #FFF;
     font-weight: 800;
-    font-size: 10px;
+    font-size: 10.5px;
     padding: 6px 8px;
     letter-spacing: 0.04em;
     flex-shrink: 0;
@@ -654,11 +613,12 @@ function buildHtml(counts) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 8.4px;
+    font-size: 8.5px;
     color: #333;
     border-top: 1px solid #C8C0B0;
     padding-top: 3px;
     margin-top: 3px;
+    white-space: nowrap;
   }
 </style>
 </head>
@@ -671,7 +631,7 @@ function buildHtml(counts) {
 
   <div class="masthead">
     <h1>Sunday 22 November 2026</h1>
-    <div class="subdeck">COP31 ends with no fossil-fuel deal · Sea drones sink Russian warship in Libya · 186 drones strike Ukraine</div>
+    <div class="subdeck">COP31 FAILS IN OVERTIME · SEA DRONES SINK RUSSIAN CORVETTE · 186 DRONES HIT UKRAINE</div>
   </div>
 
   <div class="utc-strip">
@@ -701,8 +661,8 @@ function buildHtml(counts) {
         ${s.svg}
       </div>
       <div class="meta-row">
-        <div class="meta-left"><span class="num-dot" style="background:${regionColor[s.region]};">${s.id}</span><span style="font-size:8.6px;">${s.location}</span></div>
-        <span class="pill" style="font-size:7.6px;">${s.tag.split(' · ')[0]}</span>
+        <div class="meta-left"><span class="num-dot" style="background:${regionColor[s.region]};">${s.id}</span><span style="font-size:9.4px;">${s.location}</span></div>
+        <span class="pill" style="font-size:8.2px;">${s.tag.split(' · ')[0]}</span>
       </div>
       <h3>${s.headline}</h3>
       <p>${s.summary}</p>
@@ -711,13 +671,13 @@ function buildHtml(counts) {
 
   <div class="lower-tier">
     <div>
-      <div class="sec-title">WORLD MAP (#1–13 PINS · #14–24 DOTS)</div>
+      <div class="sec-title">WORLD MAP (#1–11 PINS · #12–19 DOTS)</div>
       ${buildWorldMapSvg(counts)}
     </div>
     <div>
-      <div class="sec-title">ALSO ON SUNDAY 22 NOVEMBER 2026 — 11 WIRE BRIEFS ACROSS ALL 7 CONTINENTS</div>
+      <div class="sec-title">ALSO ON SUNDAY 22 NOVEMBER 2026 — 8 DISPATCHES ACROSS CONTINENTS</div>
       <div class="briefs-cols">
-        ${BRIEFS.map(b => `<div class="brief"><span class="bnum" style="background:${regionColor[b.region]};">${b.id}</span><b>${b.place}:</b> ${b.text}. <i>(${b.src})</i></div>`).join('')}
+        ${BRIEFS.map(b => `<div class="brief"><span class="bnum" style="background:${regionColor[b.region]};">${b.id}</span><b>${b.place}:</b> ${b.text} <span class="bsrc">[${b.src}]</span></div>`).join('')}
       </div>
     </div>
   </div>
@@ -725,15 +685,15 @@ function buildHtml(counts) {
   <div class="date-check">
     <div class="dc-badge">DATE CHECK</div>
     <div>
-      <b>Every story happened or was first reported on Sunday 22 November 2026.</b>
-      <b>Left out as earlier news (Nov 20–21):</b> Peru M6.7 quake, Riyadh missile interceptions, EU–Indonesia CEPA, BepiColombo Mercury arrival, Cyclone Akvan landfall.
-      <b>Not yet (Nov 23+):</b> Shuri Castle reopening (Mon 23), NZ–India Test draw (Mon 23), Belgium air-traffic strike (Mon 23).
+      <b>Every item occurred or broke on Sunday 22 November 2026.</b>
+      <b>Excluded as earlier (Nov 20–21):</b> Peru M6.7 quake, Riyadh missiles, EU–Indonesia CEPA, BepiColombo arrival, Cyclone Akvan.
+      <b>Later (Nov 23+):</b> Belgium air-traffic strike.
     </div>
   </div>
 
   <div class="footer">
-    <span><b>EPISTEMOLOGY:</b> [CONFIRMED] 2+ outlets · [OFFICIALS] named ministry/command · [REPORTED] wire dispatch · [DISPUTED] conflicting claims</span>
-    <span><b>SOURCES:</b> AP, Reuters, AFP, BBC, Al Jazeera, Guardian, Kyodo, CNA, F1, ATP, USGS · Original vector drawings</span>
+    <span><b>EPISTEMOLOGY:</b> [CONFIRMED] 2+ outlets · [OFFICIALS] ministry/command · [REPORTED] wire dispatch · [DISPUTED] conflicting claims</span>
+    <span><b>SOURCES:</b> AP, Reuters, AFP, BBC, AJ, Guardian, Kyodo, CNA, F1, ATP · Vector art</span>
   </div>
 </div>
 </body>
